@@ -382,6 +382,7 @@
   }
   .header__box-select {
     border: none;
+    background-color: transparent;
   }
   .header__box-input {
     border: none;
