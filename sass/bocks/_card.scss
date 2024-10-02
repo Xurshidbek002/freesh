@@ -1,0 +1,111 @@
+.card {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .contaienr {
+    width: 100%;
+  }
+  &__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &-name {
+      font-weight: 700;
+      font-family: Poppins;
+    }
+    &-button {
+      font-weight: 700;
+      font-family: Poppins;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-item {
+      position: relative;
+      border: 2px solid #00000033;
+      padding: 16px;
+      border-radius: 18px;
+
+      &:hover {
+        transform: scale(102%);
+        transition: all 0.4s;
+
+        box-shadow: 4px 5px 8px #00000013;
+      }
+    }
+    &-span {
+      position: absolute;
+      padding: 0 5px;
+      background-color: #6f6f6fa6;
+      border-radius: 12px;
+      color: #52e556;
+      font-family: Poppins;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px #000;
+      left: 9%;
+      top: 19px;
+    }
+
+    &-box {
+      margin-top: 16px;
+    }
+
+    &-title {
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22.5px;
+      text-align: left;
+    }
+
+    &-text {
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.34px;
+      text-align: left;
+      opacity: 80%;
+    }
+
+    &-name {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+      // line-height: 27px;
+      text-align: left;
+    }
+    &-button {
+      border: 2px solid #0000002b;
+      background-color: $textt;
+      border-radius: 9px;
+      padding: 3px 6px;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 22.5px;
+      text-align: left;
+      color: $oq;
+      cursor: pointer;
+      &:hover {
+        background-color: #2fc934;
+      }
+    }
+    &-inner {
+      margin-top: 16px;
+
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

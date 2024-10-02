@@ -1,5 +1,6 @@
 .menu {
   margin-top: 50px;
+  margin-bottom: 70px;
   .container {
     width: 100%;
 
@@ -14,6 +15,14 @@
     align-items: start;
     gap: 10px;
 
+    &-title {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      text-align: left;
+    }
+
     &-link {
       font-family: Open Sans;
       font-size: 14px;
@@ -21,6 +30,10 @@
       line-height: 19.07px;
       text-align: left;
       text-decoration: underline;
+      color: $textt;
+      &:hover {
+        color: #000;
+      }
     }
 
     &-button {
@@ -33,6 +46,11 @@
       padding: 5px;
       border-radius: 7px;
       width: 146.22px;
+
+      &:hover {
+        background-color: $textt;
+        color: $oq;
+      }
     }
   }
 
@@ -44,13 +62,22 @@
 
     &__item {
       border-radius: 20px;
-      background: linear-gradient(#ffffff32, #ffffff51),
-        url(../../images/menu.webp) no-repeat;
+      background: linear-gradient(
+          rgba(201, 236, 131, 0.132),
+          rgba(201, 236, 131, 0.132)
+        ),
+        url(../../images/photo1.png) no-repeat;
 
       width: 50%;
       height: 300px;
       padding-top: 50px;
       padding-left: 30px;
+      &:hover {
+        transform: scale(102%);
+        transition: all 0.4s;
+
+        box-shadow: 4px 5px 8px #00000013;
+      }
 
       &-text {
         font-family: Poppins;
@@ -88,6 +115,14 @@
         border: 2.3px solid #1f4f1eaf;
         cursor: pointer;
         margin-top: 100px;
+
+        &:hover {
+          background-color: #33d6b05f;
+          color: #fff;
+          border-color: transparent;
+          text-shadow: 1px 1px 2px #ff00a2b0;
+          transition: all 0.5s;
+        }
       }
     }
   }
@@ -120,8 +155,8 @@
 
       &__item {
         border-radius: 20px;
-        background: linear-gradient(#ffffff32, #ffffff51),
-          url(../../images/menu.webp) no-repeat;
+        // background: linear-gradient(#ffffff32, #ffffff51),
+        // url(../../images/menu.webp) no-repeat;
 
         width: 100%;
         height: 300px;
@@ -205,8 +240,8 @@
 
       &__item {
         border-radius: 20px;
-        background: linear-gradient(#ffffff32, #ffffff51),
-          url(../../images/menu.webp) no-repeat;
+        // background: linear-gradient(#ffffff32, #ffffff51),
+        // url(../../images/menu.webp) no-repeat;
 
         width: 100%;
         height: 300px;
@@ -296,8 +331,8 @@
 
       &__item {
         border-radius: 20px;
-        background: linear-gradient(#ffffff32, #ffffff51),
-          url(../../images/menu.webp) no-repeat;
+        // background: linear-gradient(#ffffff32, #ffffff51),
+        // url(../../images/menu.webp) no-repeat;
 
         width: 100%;
         height: 300px;

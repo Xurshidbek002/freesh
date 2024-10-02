@@ -80,7 +80,7 @@
       position: relative;
       &-span {
         padding: 3px;
-        background-color: red;
+        background-color: rgb(255, 0, 0);
         color: #ffffff;
         font-size: 6px;
         border-radius: 50%;
@@ -91,6 +91,18 @@
       }
       &-img {
         padding-right: 10px;
+      }
+      &:hover {
+        span {
+          position: absolute;
+          transform: scale(300%);
+
+          padding: 1px 3px;
+          border-radius: 12px;
+          bottom: 190%;
+          left: 15px;
+          transition: all 0.7s;
+        }
       }
     }
   }

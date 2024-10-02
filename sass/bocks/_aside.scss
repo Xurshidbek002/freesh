@@ -1,0 +1,242 @@
+.aside {
+  .container {
+    width: 100%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 50px;
+    &-item--bg {
+      background: linear-gradient(180deg, #ffffff00, #000000b7),
+        url(../../images/aside.png) no-repeat;
+      width: 100%;
+      height: 400px;
+      border-radius: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      position: relative;
+      padding: 5%;
+    }
+    &-top {
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 18px;
+      text-align: left;
+      background-color: $oq;
+      padding: 0 3px;
+      border-radius: 5px;
+      left: 5%;
+      position: absolute;
+      color: $textt;
+      top: 5%;
+    }
+    &-name {
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 33px;
+      text-align: left;
+      color: $oq;
+      padding-bottom: 17px;
+    }
+
+    &-inner--activ {
+      display: flex;
+      align-items: center;
+      color: $oq;
+      gap: 6px;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.34px;
+      text-align: left;
+    }
+
+    &-inner {
+      display: flex;
+      gap: 8px;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.34px;
+      text-align: left;
+    }
+
+    &-desccentr {
+      width: 70px;
+      padding: 1px 3px;
+      border-radius: 5px;
+      margin-top: 6px;
+      background-color: #f6f6f9;
+      color: $textt;
+      margin-left: 9px;
+      //styleName: S6/Default;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 18px;
+      text-align: left;
+    }
+
+    &-title {
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      text-align: left;
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+    }
+
+    &-rightdesc {
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22.5px;
+      text-align: left;
+      padding-bottom: 16px;
+    }
+
+    &-item--gap {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &-pictur {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .aside {
+    .container {
+      width: 100%;
+    }
+
+    &__list {
+      display: flex;
+
+      flex-wrap: wrap;
+      justify-content: center;
+      grid-template-columns: none;
+      gap: 50px;
+      &-item--bg {
+        background: linear-gradient(180deg, #ffffff00, #000000b7),
+          url(../../images/aside.png) no-repeat;
+        width: 470px;
+        height: 400px;
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: relative;
+        padding: 5%;
+      }
+      &-top {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        text-align: left;
+        background-color: $oq;
+        padding: 0 3px;
+        border-radius: 5px;
+        left: 5%;
+        position: absolute;
+        color: $textt;
+        top: 5%;
+      }
+      &-name {
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        text-align: left;
+        color: $oq;
+        padding-bottom: 17px;
+      }
+
+      &-inner--activ {
+        display: flex;
+        align-items: center;
+        color: $oq;
+        gap: 6px;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        text-align: left;
+      }
+
+      &-inner {
+        display: flex;
+        gap: 8px;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        text-align: left;
+      }
+
+      &-desccentr {
+        width: 70px;
+        padding: 1px 3px;
+        border-radius: 5px;
+        margin-top: 6px;
+        background-color: #f6f6f9;
+        color: $textt;
+        margin-left: 9px;
+        //styleName: S6/Default;
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        text-align: left;
+      }
+
+      &-title {
+        width: 270px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+      }
+      &-wrap {
+        // width: 290px;
+        display: flex;
+        align-items: center;
+      }
+
+      &-rightdesc {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+        text-align: left;
+        padding-bottom: 16px;
+      }
+
+      &-item--gap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      &-pictur {
+        margin-left: 10px;
+      }
+    }
+  }
+}
